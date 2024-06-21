@@ -1,0 +1,62 @@
+body{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: yellow;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
+button{
+    width: 800px;
+    height: 800px;
+    border: none;
+    background: none;
+    background-image: url(banan.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    outline: none;
+}
+@media screen and (max-width: 800px){
+    button{
+        width: 300px;
+        height: 300px;
+    }
+}
+.msg{
+    width: fit-content;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.249);
+    border: 3px solid black;
+    position: absolute;
+    top: -200px;
+    padding: 30px;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+    margin: 0px 5px 0px 5px;
+    z-index: 100;
+    font-size: 2rem;
+}
+.anim{
+    animation: show 2.5s ease-in-out ;
+}
+@keyframes show {
+    0%{
+
+    }
+    10%{
+        top: 20px;
+    }
+    90%{
+        top: 20px;
+    }
+    100%{
+
+    }
+}
